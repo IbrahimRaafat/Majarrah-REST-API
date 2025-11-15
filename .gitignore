@@ -1,0 +1,15 @@
+# .gitignore
+
+# 1. Dependency folder - DO NOT commit
+node_modules/
+
+# 2. Local environment variables - DO NOT commit sensitive keys
+.env
+
+# 3. Local test files
+test.js
+event.json
+
+# 4. Deployment/OS files
+*.zip
+.DS_Store
