@@ -1,17 +1,13 @@
 {
-  "name": "sc-tracker-api",
+  "name": "transactions-service",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "dotenv": "^17.2.3",
-    "jsonwebtoken": "^9.0.2",
-    "pg": "^8.16.3"
+    "express": "^4.19.0",
+    "pg": "^8.11.5",
+    "dotenv": "^16.4.0"
   }
 }
