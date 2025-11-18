@@ -135,7 +135,8 @@ app.get('/transactions', async (req, res) => {
         }
 
         const data = await queryTransactions(startDate, endDate);
-        return res.status(200).json(data);
+        // wrap response in a top-level `data` array to match client format
+        return res.status(200).json({ data });
     } catch (err) {
         console.error('Handler error:', err.message || err);
         return res.status(500).json({
